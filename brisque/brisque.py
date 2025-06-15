@@ -181,7 +181,7 @@ class BRISQUE:
 
         x, idx = svmutil.gen_svm_nodearray(
             scaled_brisque_features,
-            isKernel=(self.model.param.kernel_type == svmutil.PRECOMPUTED))
+            isKernel=(self.model.param.kernel_type == 4))
 
         nr_classifier = 1
         prob_estimates = (svmutil.c_double * nr_classifier)()
